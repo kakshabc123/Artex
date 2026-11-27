@@ -67,7 +67,7 @@ RUN ARTEX_SKIP_FRONTEND=1 \
 #
 # sqlmap has no release binaries: it is a shallow clone of a pinned tag, checked
 # against the expected commit, which is the same idea.
-FROM --platform=$BUILDPLATFORM debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc AS tools
+FROM --platform=$BUILDPLATFORM debian:bookworm-slim@sha256:e67eeead736ff7bbe258ef088bff683635c561b1fcfefad0806c1df4ab49ce0e AS tools
 ARG TARGETARCH
 ARG NUCLEI_VERSION=v3.11.1
 ARG NUCLEI_SHA256_AMD64=ea63d4ae232808cd7c6bc00d0142428e231fab59dae01042246097d195835ab6
